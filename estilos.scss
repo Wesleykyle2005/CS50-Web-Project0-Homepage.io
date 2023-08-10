@@ -2,7 +2,7 @@
 
 body{
 
-    background-color: rgb(65, 196, 65);
+    background-color: rgb(72, 134, 216);
 }
 
 .encabezado{
@@ -11,6 +11,10 @@ body{
     height: 20vh;
     width: 100%;
     text-align:center;
+    background-image:url(totoro.png);
+    background-size:contain;
+
+
   }
 
 
@@ -21,12 +25,12 @@ body{
 }
 
 .menu{
-    background-color: rgb(21, 72, 150);
+    background-color: rgb(37, 95, 180);
     height: 10vh;
     text-align:center;
    .link{
 
-    color:black;
+    color:rgb(255, 255, 255);
     text-decoration:solid;
 
     &:hover{

@@ -1,5 +1,5 @@
 body {
-  background-color: #41c441;
+  background-color: #4886d8;
 }
 
 .encabezado {
@@ -8,6 +8,8 @@ body {
   height: 20vh;
   width: 100%;
   text-align: center;
+  background-image: url(totoro.png);
+  background-size: contain;
 }
 
 .imagenes {
@@ -16,13 +18,13 @@ body {
 }
 
 .menu {
-  background-color: #154896;
+  background-color: #255fb4;
   height: 10vh;
   text-align: center;
 }
 
 .menu .link {
-  color: black;
+  color: white;
   -webkit-text-decoration: solid;
           text-decoration: solid;
 }
