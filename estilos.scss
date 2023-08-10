@@ -1,0 +1,38 @@
+body{
+
+    background-color: rgb(65, 196, 65);
+}
+
+.encabezado{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    height: 20vh;
+    width: 100%;
+    text-align:center;
+  }
+
+
+.imagenes{
+
+    height: 100%;
+    width: 100%;
+}
+
+.menu{
+    background-color: rgb(21, 72, 150);
+    height: 10vh;
+    text-align:center;
+   .link{
+
+    color:black;
+    text-decoration:solid;
+
+    &:hover{
+        color:gray;
+        text-decoration: double;
+        cursor: context-menu;
+
+    }
+   }
+
+}

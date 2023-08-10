@@ -1,0 +1,36 @@
+body {
+  background-color: #41c441;
+}
+
+.encabezado {
+  background-color: black;
+  color: white;
+  height: 20vh;
+  width: 100%;
+  text-align: center;
+}
+
+.imagenes {
+  height: 100%;
+  width: 100%;
+}
+
+.menu {
+  background-color: #154896;
+  height: 10vh;
+  text-align: center;
+}
+
+.menu .link {
+  color: black;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+}
+
+.menu .link:hover {
+  color: gray;
+  -webkit-text-decoration: double;
+          text-decoration: double;
+  cursor: context-menu;
+}
+/*# sourceMappingURL=estilos.css.map */
