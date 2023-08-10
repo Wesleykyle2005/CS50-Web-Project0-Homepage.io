@@ -3,7 +3,7 @@ body {
 }
 
 .encabezado {
-  background-color: black;
+  background-color: #1512a3;
   color: white;
   height: 20vh;
   width: 100%;
@@ -32,5 +32,10 @@ body {
   -webkit-text-decoration: double;
           text-decoration: double;
   cursor: context-menu;
+}
+
+.titulos {
+  text-align: center;
+  padding: 10vh;
 }
 /*# sourceMappingURL=estilos.css.map */
