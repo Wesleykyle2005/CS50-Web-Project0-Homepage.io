@@ -78,6 +78,13 @@ p {
   text-align: left;
 }
 
+@media screen and (min-width: 1200px) {
+  .Descripcion {
+    font-size: 100%;
+    text-align: center;
+  }
+}
+
 .contenido {
   border: black solid;
 }
