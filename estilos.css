@@ -21,6 +21,7 @@ body {
 .imagenes {
   height: 50%;
   width: 50%;
+  border-radius: 10%;
 }
 
 .menu, .linkpie {
@@ -73,7 +74,11 @@ p {
 }
 
 .Descripcion {
-  font-size: 100%;
+  font-size: 70%;
   text-align: left;
+}
+
+.contenido {
+  border: black solid;
 }
 /*# sourceMappingURL=estilos.css.map */
