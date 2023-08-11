@@ -79,7 +79,8 @@ body{
     color: rgb(0, 0, 0);
     background-color: rgb(72, 194, 216);
     text-decoration: solid;
-    font-size: 10vh;
+    font-size: 3vh;
+    border-color: black;
 }
 
 p{
@@ -103,4 +104,19 @@ p{
 
 .contenido{
     border:rgb(0, 0, 0) solid;
+}
+
+#tabla{
+
+    
+    background-color: rgb(0, 0, 0);
+    color:white;
+    border: 1px solid;
+    height: 100%;
+    
+    tr, th, td{
+        border: 0.5vh solid gray;
+        padding: 5vh;
+        
+    }
 }

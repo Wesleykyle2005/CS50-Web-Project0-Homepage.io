@@ -65,7 +65,8 @@ body {
   background-color: #48c2d8;
   -webkit-text-decoration: solid;
           text-decoration: solid;
-  font-size: 10vh;
+  font-size: 3vh;
+  border-color: black;
 }
 
 p {
@@ -87,5 +88,17 @@ p {
 
 .contenido {
   border: black solid;
+}
+
+#tabla {
+  background-color: black;
+  color: white;
+  border: 1px solid;
+  height: 100%;
+}
+
+#tabla tr, #tabla th, #tabla td {
+  border: 0.5vh solid gray;
+  padding: 5vh;
 }
 /*# sourceMappingURL=estilos.css.map */
