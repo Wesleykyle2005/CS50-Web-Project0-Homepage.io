@@ -2,13 +2,19 @@
 
 body{
 
-    background-color: rgb(72, 134, 216);
+    background-color: rgb(72, 194, 216);
+
+    @media (max-width: 500px) {
+
+        background-color: rgb(72, 216, 180);
+        
+    }
 }
 
 .encabezado{
     background-color: rgb(21, 18, 163);
     color: white;
-    height: 20vh;
+    height: 23vh;
     width: 100%;
     text-align:center;
     background-image:url(totoro.png);
@@ -46,4 +52,13 @@ body{
 .titulos{
     text-align: center;
     padding: 10vh;
+}
+
+.cartas{
+    
+    .col{
+        border-radius:10px;
+        background-color: pink;
+        margin: 5vh;
+    }
 }

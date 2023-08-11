@@ -1,11 +1,17 @@
 body {
-  background-color: #4886d8;
+  background-color: #48c2d8;
+}
+
+@media (max-width: 500px) {
+  body {
+    background-color: #48d8b4;
+  }
 }
 
 .encabezado {
   background-color: #1512a3;
   color: white;
-  height: 20vh;
+  height: 23vh;
   width: 100%;
   text-align: center;
   background-image: url(totoro.png);
@@ -39,5 +45,11 @@ body {
 .titulos {
   text-align: center;
   padding: 10vh;
+}
+
+.cartas .col {
+  border-radius: 10px;
+  background-color: pink;
+  margin: 5vh;
 }
 /*# sourceMappingURL=estilos.css.map */
