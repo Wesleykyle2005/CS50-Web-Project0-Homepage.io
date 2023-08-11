@@ -23,19 +23,19 @@ body {
   width: 100%;
 }
 
-.menu {
+.menu, .linkpie {
   background-color: #255fb4;
   height: 10vh;
   text-align: center;
 }
 
-.menu .link {
+.menu .link, .linkpie .link {
   color: white;
   -webkit-text-decoration: solid;
           text-decoration: solid;
 }
 
-.menu .link:hover {
+.menu .link:hover, .linkpie .link:hover {
   color: gray;
   -webkit-text-decoration: double;
           text-decoration: double;
@@ -51,5 +51,24 @@ body {
   border-radius: 10px;
   background-color: pink;
   margin: 5vh;
+}
+
+.logoGhibli {
+  height: 30%;
+  width: 30%;
+  border-radius: 50%;
+}
+
+.linkpie {
+  color: black;
+  background-color: #48c2d8;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+  font-size: 10vh;
+}
+
+p {
+  font-size: 3vh;
+  text-align: center;
 }
 /*# sourceMappingURL=estilos.css.map */
