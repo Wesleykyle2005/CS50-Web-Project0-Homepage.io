@@ -109,14 +109,26 @@ p{
 #tabla{
 
     
-    background-color: rgb(0, 0, 0);
-    color:white;
-    border: 1px solid;
-    height: 100%;
+    
+    
+    
+    table{
+        color:white;
+        background-color: black;
+        
+        
+
+    }
     
     tr, th, td{
         border: 0.5vh solid gray;
         padding: 5vh;
         
     }
+}
+
+li{
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 4vh;
 }
