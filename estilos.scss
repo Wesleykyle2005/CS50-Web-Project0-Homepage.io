@@ -94,7 +94,7 @@ p{
     
 }
 
-@media screen and(min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .Descripcion{
         font-size: 100%;
         text-align: center;
@@ -106,29 +106,65 @@ p{
     border:rgb(0, 0, 0) solid;
 }
 
-#tabla{
-
-    
-    
-    
-    
-    table{
-        color:white;
-        background-color: black;
-        
-        
-
-    }
-    
-    tr, th, td{
-        border: 0.5vh solid gray;
-        padding: 5vh;
-        
-    }
-}
-
 li{
     color: rgb(0, 0, 0);
     font-weight: 700;
     font-size: 4vh;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Agregar estilos para la tabla */
+#tabla {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border: black solid;
+}
+
+/* Media query para hacer la tabla responsive */
+@media (max-width: 768px) {
+  #tabla {
+    overflow-x: auto;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  tr {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  th,
+  td {
+    flex-basis: calc(33.33% - 16px); /* Ajustar el tamaño de las celdas */
+    max-width: calc(33.33% - 16px);
+    padding: 8px;
+    box-sizing: border-box;
+    white-space: normal; /* Cambiamos a normal para que el texto se acomode según la pantalla */
+    border: black solid;
+  }
+}
+

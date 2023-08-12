@@ -1,15 +1,15 @@
+@charset "UTF-8";
 body {
-  background-color: #48c2d8;
+  background-color: rgb(72, 194, 216);
 }
-
 @media (max-width: 500px) {
   body {
-    background-color: #48d8b4;
+    background-color: rgb(72, 216, 180);
   }
 }
 
 .encabezado {
-  background-color: #1512a3;
+  background-color: rgb(21, 18, 163);
   color: white;
   height: 23vh;
   width: 100%;
@@ -25,17 +25,15 @@ body {
 }
 
 .menu, .linkpie {
-  background-color: #255fb4;
+  background-color: rgb(37, 95, 180);
   height: 10vh;
   text-align: center;
 }
-
 .menu .link, .linkpie .link {
-  color: white;
+  color: rgb(255, 255, 255);
   -webkit-text-decoration: solid;
           text-decoration: solid;
 }
-
 .menu .link:hover, .linkpie .link:hover {
   color: gray;
   -webkit-text-decoration: double;
@@ -61,8 +59,8 @@ body {
 }
 
 .linkpie {
-  color: black;
-  background-color: #48c2d8;
+  color: rgb(0, 0, 0);
+  background-color: rgb(72, 194, 216);
   -webkit-text-decoration: solid;
           text-decoration: solid;
   font-size: 3vh;
@@ -85,24 +83,53 @@ p {
     text-align: center;
   }
 }
-
 .contenido {
-  border: black solid;
-}
-
-#tabla table {
-  color: white;
-  background-color: black;
-}
-
-#tabla tr, #tabla th, #tabla td {
-  border: 0.5vh solid gray;
-  padding: 5vh;
+  border: rgb(0, 0, 0) solid;
 }
 
 li {
-  color: black;
+  color: rgb(0, 0, 0);
   font-weight: 700;
   font-size: 4vh;
 }
-/*# sourceMappingURL=estilos.css.map */
+
+/* Agregar estilos para la tabla */
+#tabla {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border: black solid;
+}
+
+/* Media query para hacer la tabla responsive */
+@media (max-width: 768px) {
+  #tabla {
+    overflow-x: auto;
+  }
+  table {
+    width: 100%;
+  }
+  tr {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  th,
+  td {
+    flex-basis: calc(33.33% - 16px); /* Ajustar el tamaño de las celdas */
+    max-width: calc(33.33% - 16px);
+    padding: 8px;
+    box-sizing: border-box;
+    white-space: normal; /* Cambiamos a normal para que el texto se acomode según la pantalla */
+    border: black solid;
+  }
+}/*# sourceMappingURL=estilos.css.map */
