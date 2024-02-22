@@ -1,17 +1,12 @@
 @charset "UTF-8";
 body {
-  background-color: rgb(72, 194, 216);
-}
-@media (max-width: 500px) {
-  body {
-    background-color: rgb(72, 216, 180);
-  }
+  background-color: #fffbf3;
 }
 
 .encabezado {
-  background-color: rgb(21, 18, 163);
+  background-color: #08aeff;
   color: white;
-  height: 23vh;
+  height: 15vh;
   width: 100%;
   text-align: center;
   background-image: url(totoro.png);
@@ -25,30 +20,34 @@ body {
 }
 
 .menu, .linkpie {
-  background-color: rgb(37, 95, 180);
+  background-color: #337ab7;
   height: 10vh;
   text-align: center;
 }
+
 .menu .link, .linkpie .link {
-  color: rgb(255, 255, 255);
-  -webkit-text-decoration: solid;
-          text-decoration: solid;
+  color: white;
+  text-decoration: solid;
+  font-size: 1.5vh;
+  font-weight: 400;
 }
+
 .menu .link:hover, .linkpie .link:hover {
   color: gray;
-  -webkit-text-decoration: double;
-          text-decoration: double;
+  text-decoration: double;
   cursor: context-menu;
 }
 
 .titulos {
-  text-align: left;
-  padding: 10vh;
+  text-align: center;
+  padding: 2vh;
+  font-size: 3vh;
+  font-weight: 500;
 }
 
 .cartas .col {
   border-radius: 10px;
-  background-color: pink;
+  background-color: #f4c59a;
   margin: 1vh;
 }
 
@@ -59,17 +58,28 @@ body {
 }
 
 .linkpie {
-  color: rgb(0, 0, 0);
-  background-color: rgb(72, 194, 216);
-  -webkit-text-decoration: solid;
-          text-decoration: solid;
+  color: black;
+  background-color: #fffbf3;
+  text-decoration: solid;
   font-size: 3vh;
-  border-color: black;
+  border-color: #fffbf3;
 }
 
-p {
-  font-size: 3vh;
-  text-align: center;
+@media (max-width: 599px) {
+  p {
+    font-size: 2vh;
+    text-align: center;
+  }
+}
+
+@media (min-width: 600px) {
+  p {
+    font-size: 1vh;
+    text-align: center;
+  }
+  .menu, .linkpie {
+    height: 5vh;
+  }
 }
 
 .Descripcion {
@@ -83,14 +93,9 @@ p {
     text-align: center;
   }
 }
-.contenido {
-  border: rgb(0, 0, 0) solid;
-}
 
-li {
-  color: rgb(0, 0, 0);
-  font-weight: 700;
-  font-size: 4vh;
+.contenido {
+  border: black solid;
 }
 
 /* Agregar estilos para la tabla */
@@ -124,12 +129,14 @@ td {
     flex-wrap: wrap;
   }
   th,
-  td {
-    flex-basis: calc(33.33% - 16px); /* Ajustar el tamaño de las celdas */
+td {
+    flex-basis: calc(33.33% - 16px);
+    /* Ajustar el tamaño de las celdas */
     max-width: calc(33.33% - 16px);
     padding: 8px;
     box-sizing: border-box;
-    white-space: normal; /* Cambiamos a normal para que el texto se acomode según la pantalla */
+    white-space: normal;
+    /* Cambiamos a normal para que el texto se acomode según la pantalla */
     border: black solid;
   }
-}/*# sourceMappingURL=estilos.css.map */
+}

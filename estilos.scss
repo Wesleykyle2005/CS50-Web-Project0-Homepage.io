@@ -1,92 +1,99 @@
-
+$blue-head: rgb(51, 122, 183);
+$back-body: rgb(255,251,243);
+$blue-nav: rgb(8,174,255);
+$back-card: rgb(244,197,154);
 
 body{
 
-    background-color: rgb(72, 194, 216);
-
-    @media (max-width: 500px) {
-
-        background-color: rgb(72, 216, 180);
-        
-    }
+    background-color: $back-body;
 }
 
 .encabezado{
-    background-color: rgb(21, 18, 163);
+    background-color: $blue-nav;
     color: white;
-    height: 23vh;
+    height: 15vh;
     width: 100%;
     text-align:center;
     background-image:url(totoro.png);
     background-size:contain;
-
-
   }
 
-
 .imagenes{
-
     height: 50%;
     width: 50%;
     border-radius: 10%;
-    
 }
 
 .menu{
-    background-color: rgb(37, 95, 180);
+    background-color: $blue-head;
     height: 10vh;
     text-align:center;
    .link{
-
     color:rgb(255, 255, 255);
     text-decoration:solid;
-
+    font-size: 1.5vh;
+    font-weight: 400;
     &:hover{
         color:gray;
         text-decoration: double;
         cursor: context-menu;
-
     }
    }
-
 }
 
 .titulos{
-    text-align: left;
-    padding: 10vh;
+    text-align: center;
+    padding: 2vh;
+    font-size: 3vh;
+    font-weight: 500;
+    
 }
 
 .cartas{
-    
     .col{
         border-radius:10px;
-        background-color: pink;
+        background-color: $back-card;
         margin: 1vh;
     }
 }
 
 
-    .logoGhibli{
-        height: 30%;
-        width: 30%;
-        border-radius: 50%;
-        
-        
-    }
+.logoGhibli{
+    height: 30%;
+    width: 30%;
+    border-radius: 50%;
+}
 
 .linkpie{
     @extend .menu;
     color: rgb(0, 0, 0);
-    background-color: rgb(72, 194, 216);
+    background-color: $back-body;
     text-decoration: solid;
     font-size: 3vh;
-    border-color: black;
+    border-color: $back-body;
 }
 
+@media(max-width: 599px){
 p{
-    font-size: 3vh;
+    font-size: 2vh;
     text-align: center;
 }
+
+}
+
+@media(min-width: 600px){
+p{
+    font-size: 1vh;
+    text-align: center;
+}
+.menu{
+  height: 5vh;
+  
+}
+
+}
+
+
 
 .Descripcion{
     font-size: 70%;
@@ -105,23 +112,6 @@ p{
 .contenido{
     border:rgb(0, 0, 0) solid;
 }
-
-li{
-    color: rgb(0, 0, 0);
-    font-weight: 700;
-    font-size: 4vh;
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Agregar estilos para la tabla */
