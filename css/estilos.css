@@ -9,7 +9,7 @@ body {
   height: 15vh;
   width: 100%;
   text-align: center;
-  background-image: url(img/totoro.png);
+  background-image: url(/img/totoro.png);
   background-size: contain;
 }
 
